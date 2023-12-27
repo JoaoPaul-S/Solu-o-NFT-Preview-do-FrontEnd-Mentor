@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    height: 550px;
+    width: 330px;
+    border-radius: 10px;
+}
+
+.equilibrium{
+    width: 290px;
+    height: 290px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 320px;
+    cursor: pointer;
+}
+
+
+.overlay{
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    background-color: rgb(0, 255, 247, 0.5);
+    border-radius: 5px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.image:hover .overlay{
+    opacity: 1;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 40%;
+}
+
+h2{
+    color: hsl(0, 0%, 100%);
+    margin: 15px 25px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+h2:hover{
+    color:hsl(178, 100%, 50%) ;
+}
+
+p{
+    color: hsl(215, 51%, 70%);
+    margin: 0px 25px 15px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 40px 0px 40px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.clock-icon{
+    color: hsl(215, 51%, 70%);
+    list-style: url(Images/icon-clock.svg);
+}
+
+.eth-icon{
+    color: hsl(178, 100%, 50%);
+    list-style: url(Images/icon-ethereum.svg);
+    list-style-position: outside;
+}
+
+hr{
+    border-color: hsl(215, 32%, 27%);
+    width: 280px;
+    align-self: center;
+    margin: 20px 0px 7px;
+    border-radius: 15px;
+}
+
+.creator{
+    color: hsl(215, 51%, 70%);
+    list-style: none;
+    justify-content: center;
+    margin: 15px 23px 0px 0px;
+}
+
+strong{
+    color: white;
+    cursor: pointer;
+}
+
+strong:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+
+.marker-container{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 220px;
+    width: 100px;
+}
+
+.marker{
+    width: 30px;
+    height: 30px;
+    margin: 25px 26px 10px; 
+    border: 1px solid white;
+    border-radius: 20px;
+}
